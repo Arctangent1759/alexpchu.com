@@ -11,6 +11,53 @@ div#header{
     width:100%;
     height:100%;
 }
+div#header_text{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+div.header_text_pane{
+    width:50%;
+    height:100%;
+    display:table;
+    float:left;
+}
+div.header_text_pane_content{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    color:white;
+}
+h1 {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+}
+h2 {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 65px;
+}
+h2 a{
+    text-decoration:none;
+    color:white;
+}
+h1.header {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+h2.header {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+p {
+    font-family: 'Vollkorn', Georgia, Times, serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+img#divider{
+    height:50%;
+    width:1px;
+}
 img#header_cvs_bg{
     position:absolute;
     width:100%;
@@ -21,6 +68,8 @@ img#header_cvs_bg{
 }
 canvas#header_cvs{
     position:absolute;
+    width:100%;
+    height:100%;
     z-index:1;
 }
 div#content{
