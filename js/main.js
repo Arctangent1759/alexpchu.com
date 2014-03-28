@@ -93,9 +93,9 @@ $(document).ready(function(){
     },50);
 
     var SCROLLRATE = 1;
-    var navShown=false;
+    var navShown=true;
 
-    $(window).scroll(function(){
+    function onscroll(){
         if ($('body').scrollTop() >= window.innerHeight){
             if (navShown){
                 $("div#nav").animate({"right":"0%"});
@@ -112,7 +112,10 @@ $(document).ready(function(){
             perc=0;
         }
         $("div#header").css({"height":perc +"%"});
-    });
+    }
+
+    $(window).scroll(onscroll);
+    onscroll();
 
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
