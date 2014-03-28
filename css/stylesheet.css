@@ -108,7 +108,7 @@ canvas#header_cvs{
  *===========*/
 div#body{
     position:relative;
-    background-image:url('../img/bg.jpg');
+    background-image:url('/img/bg.jpg');
     background-attachment:fixed;
     padding:0.01% 0;
     z-index:1;
