@@ -47,7 +47,6 @@ $(document).ready(function(){
 
 
     $(document).mousemove(function(event) {
-        camera.position.x=0.0000001*(event.pageX-window.innerWidth/2)*(event.pageX-window.innerWidth/2)*(event.pageX-window.innerWidth/2)
         camera.position.y=-0.000001*(event.pageY-window.innerHeight/2)*(event.pageY-window.innerHeight/2)*(event.pageY-window.innerHeight/2)
     });
 
@@ -94,8 +93,20 @@ $(document).ready(function(){
     },50);
 
     var SCROLLRATE = 1;
+    var navShown=false;
 
     $(window).scroll(function(){
+        if ($('body').scrollTop() >= window.innerHeight){
+            if (navShown){
+                $("div#nav").animate({"right":"0%"});
+                navShown=false
+            }
+        }else{
+            if (!navShown){
+                $("div#nav").animate({"right":"-30%"});
+                navShown=true
+            }
+        }
         var perc = 25+75*(window.innerHeight-SCROLLRATE*$('body').scrollTop())/window.innerHeight;
         if (perc < 0){
             perc=0;

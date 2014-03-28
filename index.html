@@ -10,7 +10,7 @@
     <script src="js/main.js"></script>
     <title>Alex Chu</title>
   </head>
-  <body>
+  <body id="top">
     <div id="header">
       <canvas id = "header_cvs"></canvas>
         <!--
@@ -19,7 +19,7 @@
       <div id="header_text">
           <div class="header_text_pane">
               <div class="header_text_pane_content">
-                  <h1 class="header" id="title">Alexander P. Chu</h1>
+                  <a href="#" class="navlink"><h1 class="header" id="title">Alexander P. Chu</h1></a>
               </div>
               <div class="header_text_pane_content">
                   <img src="./img/subtleLine.png" id="divider"></img>
@@ -27,16 +27,28 @@
           </div>
           <div class="header_text_pane">
               <div class="header_text_pane_content" id="">
-                  <h2 class="header"><a href="#about" id="link_about">About</a></h2>
-                  <h2 class="header"><a href="#projects" id="link_projects">Projects</a></h2>
-                  <h2 class="header"><a href="#github" id="link_github">Github</a></h2>
-                  <h2 class="header"><a href="#resume" id="link_resume">Resume</a></h2>
-                  <h2 class="header"><a href="#contact" id="link_contact">Contact</a></h2>
+                  <a href="#about" id="link_about" class="navlink"><div class="link_wrapper"><h2 class="header">About</h2></div></a>
+                  <a href="#projects" id="link_projects" class="navlink"><div class="link_wrapper"><h2 class="header">Projects</h2></div></a>
+                  <a href="#github" id="link_github" class="navlink"><div class="link_wrapper"><h2 class="header">Github</h2></div></a>
+                  <a href="#resume" id="link_resume" class="navlink"><div class="link_wrapper"><h2 class="header">Resume</h2></div></a>
+                  <a href="#contact" id="link_contact" class="navlink"><div class="link_wrapper"><h2 class="header">Contact</h2></div></a>
               </div>
           </div>
       </div>
     </div>
     <div id="header_placeholder"></div>
+
+    <div id="nav">
+      <div id="nav_links">
+        <a href="#top" class="navlink"><div class="link_wrapper"><h2 class="nav">^</h2></div></a>
+        <a href="#about" class="navlink"><div class="link_wrapper"><h2 class="nav">About</h2></div></a>
+        <a href="#projects" class="navlink"><div class="link_wrapper"><h2 class="nav">Projects</h2></div></a>
+        <a href="#github" class="navlink"><div class="link_wrapper"><h2 class="nav">Github</h2></div></a>
+        <a href="#resume" class="navlink"><div class="link_wrapper"><h2 class="nav">Resume</h2></div></a>
+        <a href="#contact" class="navlink"><div class="link_wrapper"><h2 class="nav">Contact</h2></div></a>
+      </div>
+    </div>
+
     <div id="body">
         <div class="content" id="about">
             <h1>About</h1><hr class="faded"/>

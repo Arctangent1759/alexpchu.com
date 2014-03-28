@@ -4,7 +4,6 @@
 }
 
 body {
-    background-image:url('/img/bg.png');
     background-color:#000000;
 } 
 /*============
@@ -21,7 +20,7 @@ h2 {
     font-size: 30px;
     line-height: 65px;
 }
-h2 a{
+a.navlink{
     text-decoration:none;
     color:white;
 }
@@ -81,6 +80,9 @@ div.header_text_pane_content{
     text-align:center;
     color:white;
 }
+div.link_wrapper:hover{
+    background-color:rgba(0,0,0,0.5);
+}
 
 img#divider{
     height:50%;
@@ -106,7 +108,7 @@ canvas#header_cvs{
  *===========*/
 div#body{
     position:relative;
-    background-image:url('/img/bg.jpg');
+    background-image:url('../img/bg.jpg');
     background-attachment:fixed;
     padding:0.01% 0;
     z-index:1;
@@ -148,4 +150,28 @@ hr.faded {
       rgb(221,221,221) 90%,
       rgb(255,255,255) 100%
   );
+}
+/*==========
+ * Nav defs 
+ *==========*/
+
+div#nav{
+    position:fixed;
+    right:-30%;
+    top:0px;
+    height:100%;
+    z-index:10;
+    display:table;
+}
+div#nav_links{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    background-color:rgba(1,0,0,0.5);
+    height:50px
+}
+h2.nav{
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 40px;
 }
