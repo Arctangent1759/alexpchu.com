@@ -1,10 +1,16 @@
 <html>
   <head>
+    <link rel="image_src" href="http://alexpchu.com/img/favicon.png" />
+    <meta property="og:title" content="Alex Chu"/> 
+    <meta property="og:image" content="http://alexpchu.com/img/favicon.png"/> 
+    <meta property="og:url" content="http://alexpchu.com"/> 
+    <meta property="og:site_name" content="Alex Chu"/> 
+    <meta property="og:description" content="Alex is a full-stack developer studying Electrical Engineering and Computer Science at UC Berkeley. His interests include machine learning, web development, signal processing, speaking in the third person to people on the internet, and recreational mathematics."/> 
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css"></link>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
     <script src="js/angular.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/three.js"></script>
@@ -54,7 +60,7 @@
         <div class="content" id="about">
             <h1>About</h1><hr class="faded"/>
             <p>
-            Alex is a full-stack deveoloper studying Electrical Engineering and Computer Science at UC Berkeley. 
+            Alex is a full-stack developer studying Electrical Engineering and Computer Science at UC Berkeley. 
             His interests include machine learning, web development, signal processing, speaking in the third person to people on the internet, and recreational mathematics.
             </p>
         </div>
@@ -65,9 +71,19 @@
             A selection of my projects. More coming soon, as I migrate my old servers to Docker.
             </p>
             <p>
-            <h2>Ray Tracing as a Service</h2>
-            <p>A CS184 class project turned into a web app. Raytracer built in C++, server built with Flask.</p>
-            <a href="http://rtaas.alexpchu.com">http://rtaas.alexpchu.com</a>
+              <h2>Ray Tracing as a Service</h2>
+              <p>CS184 class project that was turned into a web app. Raytracer built in C++, server built with Flask.</p>
+              <a href="http://rtaas.alexpchu.com" target="_blank">http://rtaas.alexpchu.com</a>
+            </p>
+            <p>
+              <h2>Texit</h2>
+              <p>A service for converting arbitrary latex formulae to SVG images. Built on Flask. Finalist entry at PennApps Fall 2013.</p>
+              <a href="http://tex.sh" target="_blank">http://tex.sh</a>
+            </p>
+            <p>
+              <h2>SpaceFace</h2>
+              <p>Multiplayer online 3d space shooting game with computer vision, controlled by pointing your nose relative to the center of the screen. Built with Nodejs, OpenCV, and Threejs. Entry at HackTech Spring 2014. Note that the vision features will not work unless the vision daemon (which can be downloaded from our repository <a href="https://github.com/ugotnitined/spaceface/" target="_blank">here</a>) is running, and the app will default to mouse controls.</p>
+              <a href="http://spaceface.alexpchu.com" target="_blank">http://spaceface.alexpchu.com</a>
             </p>
         </div>
         <div class="content" id="github">
@@ -80,9 +96,10 @@
         <div class="content" id="resume">
             <h1>Resume</h1><hr class="faded"/>
             <p>
-            <a href="/Viewer.js/#../file/resume.pdf">asdf</a>
-             <iframe id="viewer" src = "/Viewer.js/#../file/resume.pdf" width='400' height='300' allowfullscreen webkitallowfullscreen></iframe> 
-            <a href="file/resume.pdf">Download</a>
+              <a href="/Viewer.js/#../file/resume.pdf"></a>
+              <center><iframe id="viewer" src = "/Viewer.js/#../file/resume.pdf" width='100%' height='60%' allowfullscreen webkitallowfullscreen></iframe> </center>
+              <br/>
+              <a href="file/resume.pdf">Download</a>
             </p>
         </div>
         <div class="content" id="contact">

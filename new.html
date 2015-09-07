@@ -1,0 +1,115 @@
+<plaintext>
+<html>
+  <head>
+    <link rel="image_src" href="http://alexpchu.com/img/favicon.png" />
+    <meta property="og:title" content="Alex Chu"/> 
+    <meta property="og:image" content="http://alexpchu.com/img/favicon.png"/> 
+    <meta property="og:url" content="http://alexpchu.com"/> 
+    <meta property="og:site_name" content="Alex Chu"/> 
+    <meta property="og:description" content="Alex is a full-stack developer studying Electrical Engineering and Computer Science at UC Berkeley. His interests include machine learning, web development, signal processing, speaking in the third person to people on the internet, and recreational mathematics."/> 
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"></link>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/three.js"></script>
+    <script src="js/main.js"></script>
+    <title>Alex Chu</title>
+  </head>
+  <body id="top">
+    <div id="header">
+      <canvas id = "header_cvs"></canvas>
+        <!--
+      -->
+      <img id = "header_cvs_bg" src="img/canvas_bg.png"></img>
+      <div id="header_text">
+          <div class="header_text_pane">
+              <div class="header_text_pane_content">
+                  <a href="#" class="navlink"><h1 class="header" id="title">Alexander P. Chu</h1></a>
+              </div>
+              <div class="header_text_pane_content">
+                  <img src="./img/subtleLine.png" id="divider"></img>
+              </div>
+          </div>
+          <div class="header_text_pane">
+              <div class="header_text_pane_content" id="">
+                  <a href="#about" id="link_about" class="navlink"><div class="link_wrapper"><h2 class="header">About</h2></div></a>
+                  <a href="#projects" id="link_projects" class="navlink"><div class="link_wrapper"><h2 class="header">Projects</h2></div></a>
+                  <a href="#github" id="link_github" class="navlink"><div class="link_wrapper"><h2 class="header">Github</h2></div></a>
+                  <a href="#resume" id="link_resume" class="navlink"><div class="link_wrapper"><h2 class="header">Resume</h2></div></a>
+                  <a href="#contact" id="link_contact" class="navlink"><div class="link_wrapper"><h2 class="header">Contact</h2></div></a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div id="header_placeholder"></div>
+
+    <div id="nav">
+      <div id="nav_links">
+        <a href="#top" class="navlink"><div class="link_wrapper"><h2 class="nav">^</h2></div></a>
+        <a href="#about" class="navlink"><div class="link_wrapper"><h2 class="nav">About</h2></div></a>
+        <a href="#projects" class="navlink"><div class="link_wrapper"><h2 class="nav">Projects</h2></div></a>
+        <a href="#github" class="navlink"><div class="link_wrapper"><h2 class="nav">Github</h2></div></a>
+        <a href="#resume" class="navlink"><div class="link_wrapper"><h2 class="nav">Resume</h2></div></a>
+        <a href="#contact" class="navlink"><div class="link_wrapper"><h2 class="nav">Contact</h2></div></a>
+      </div>
+    </div>
+
+    <div id="body">
+        <div class="content" id="about">
+            <h1>About</h1><hr class="faded"/>
+            <p>
+            Alex is a full-stack developer studying Electrical Engineering and Computer Science at UC Berkeley. 
+            His interests include machine learning, web development, signal processing, speaking in the third person to people on the internet, and recreational mathematics.
+            </p>
+        </div>
+
+        <div class="content" id="projects">
+            <h1>Projects</h1><hr class="faded"/>
+            <p>
+            A selection of my projects. More coming soon, as I migrate my old servers to Docker.
+            </p>
+            <p>
+              <h2>Ray Tracing as a Service</h2>
+              <p>CS184 class project that was turned into a web app. Raytracer built in C++, server built with Flask.</p>
+              <a href="http://rtaas.alexpchu.com" target="_blank">http://rtaas.alexpchu.com</a>
+            </p>
+            <p>
+              <h2>Texit</h2>
+              <p>A service for converting arbitrary latex formulae to SVG images. Built on Flask. Finalist entry at PennApps Fall 2013.</p>
+              <a href="http://tex.sh" target="_blank">http://tex.sh</a>
+            </p>
+            <p>
+              <h2>SpaceFace</h2>
+              <p>Multiplayer online 3d space shooting game with computer vision, controlled by pointing your nose relative to the center of the screen. Built with Nodejs, OpenCV, and Threejs. Entry at HackTech Spring 2014. Note that the vision features will not work unless the vision daemon (which can be downloaded from our repository <a href="https://github.com/ugotnitined/spaceface/" target="_blank">here</a>) is running, and the app will default to mouse controls.</p>
+              <a href="http://spaceface.alexpchu.com" target="_blank">http://spaceface.alexpchu.com</a>
+            </p>
+        </div>
+        <div class="content" id="github">
+            <h1>Github</h1><hr class="faded"/>
+            <p>
+            The rest of my projects can be found at
+            <a href="http://github.com/arctangent1759">http://github.com/arctangent1759</a>.
+            </p>
+        </div>
+        <div class="content" id="resume">
+            <h1>Resume</h1><hr class="faded"/>
+            <p>
+              <a href="/Viewer.js/#../file/resume.pdf"></a>
+              <center><iframe id="viewer" src = "/Viewer.js/#../file/resume.pdf" width='100%' height='60%' allowfullscreen webkitallowfullscreen></iframe> </center>
+              <br/>
+              <a href="file/resume.pdf">Download</a>
+            </p>
+        </div>
+        <div class="content" id="contact">
+            <h1>Contact</h1><hr class="faded"/>
+            <p>
+                <p>Email: <a href="mailto:alex.p.chu@gmail.com">alex.p.chu@gmail.com</a></p>
+                <p>Phone: <a href="tel:3102594188">1-(310)259-4188</a></p>
+            </p>
+        </div>
+    </div>
+  </body>
+</html>

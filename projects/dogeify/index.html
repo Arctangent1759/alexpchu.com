@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <style>
+      body {
+        background: url(img/bg.jpg) no-repeat;
+        background-size: 100%;
+        overflow:hidden;
+      }
+      #theform {
+        position:absolute;
+        top:50%;
+        width:100%;
+        text-align:center;
+        z-index:0;
+      }
+      #dogehouse {
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        display:none;
+        z-index:1;
+      }
+      .doge {
+        position: absolute;
+        width:40px;
+        height:40px;
+        z-index:2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='theform'>
+      <input type='text' id='url'></input>
+      <button id='go'>Wow</button>
+    </div>
+    <iframe name='dogehouse' id='dogehouse'></iframe>
+    <script>
+      var index = 0;
+      var kDogeHTML = "<img class='doge' id='{id}' style='top:-200px;left:-2000px;' src='./img/doge-600.png'></img>";
+      var doge_vx = {}
+      var doge_vy = {}
+      var max_doge = 20;
+
+      function Go(){
+        var url = document.getElementById('url').value;
+        if (url.substr(0,7) != 'http://' && url.substr(0,8) != 'https://') {
+          url = "http://" + url;
+        }
+        document.getElementById("dogehouse").src=url;
+        document.getElementById('dogehouse').style.display='block';
+        DogeFactory();
+      }
+
+      document.getElementById('go').onclick = Go
+      document.onkeydown=function(evt){
+        var keyCode = evt ? (evt.which ? evt.which : evt.keyCode) : event.keyCode;
+        if(keyCode == 13) {
+          Go();
+        }
+      }
+
+      function DogeFactory() {
+        setInterval(UpdateDoge, 30);
+        for (var i = 0; i < max_doge; ++i) {
+          RandomCreateDoge();
+        }
+      }
+      function RandomCreateDoge(){
+        if (Math.random() > 0.5) {
+          MakeDoge(Math.floor(Math.random()*window.innerWidth),-100,0,1+Math.floor(Math.random()*5));
+        } else {
+          MakeDoge(-100,Math.floor(Math.random()*window.innerHeight),1+Math.floor(Math.random()*5),0);
+        }
+      }
+      function MakeDoge(x,y,vx,vy) {
+        document.body.innerHTML += kDogeHTML.replace('{id}','doge_'+index);
+        var curr_doge = document.getElementById('doge_'+index);
+        curr_doge.style.left = x;
+        curr_doge.style.top = y;
+        doge_vx[curr_doge.id] = vx
+        doge_vy[curr_doge.id] = vy
+        ++index; 
+      }
+      function UpdateDoge() {
+        var doges = document.getElementsByClassName('doge');
+        for (var i = 0; i < doges.length; ++i) {
+          var old_left = Number(doges[i].style.left.replace('px',''))
+          var old_top = Number(doges[i].style.top.replace('px',''))
+          doges[i].style.left = old_left + doge_vx[doges[i].id];
+          doges[i].style.top = old_top + doge_vy[doges[i].id];
+          if (old_left > window.innerWidth + 60) {
+            doges[i].style.left = -100 + Math.round(-100*Math.random());
+          }
+          if (old_top > window.innerHeight + 60) {
+            doges[i].style.top = -100 + Math.round(-100*Math.random());
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

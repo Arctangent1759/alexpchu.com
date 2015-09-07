@@ -1,0 +1,61 @@
+<html>
+<head>
+  <style>
+.left-pane-invisible {
+  visibility:hidden;
+  left:-30%;
+  transition:0s 0.6s;
+}
+.left-pane-not-invisible {
+  visibility:visible;
+  left:0%;
+  transition:0s 0.6s;
+}
+.right-pane-invisible {
+  visibility:hidden;
+  right:-30%;
+  transition:0s 0.6s;
+}
+.right-pane-not-invisible {
+  visibility:visible;
+  right:0%;
+  transition:0s 0.6s;
+}
+div.pane {
+  position:absolute;
+  display:block;
+  text-align:center;
+  height:100%;
+}
+div#left_pane {
+  width:30%;
+  background-color:green;
+}
+div#right_pane {
+  width:30%;
+  background-color:red;
+}
+div#middle_pane {
+  left:0px;
+  width:100%;
+}
+div.debug {
+  border : 1px solid black;
+}
+  </style>
+  <script src='/js/jquery.min.js'></script>
+</head>
+<body>
+  <div id='middle_pane' class='debug pane'>
+    MIDDLE
+    <br/>
+This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. This content should not be covered by inactive divs. 
+  </div>
+  <div id='left_pane' class='debug pane left-pane-invisible'>
+    LEFT
+  </div>
+  <div id='right_pane' class='debug pane right-pane-invisible'>
+    RIGHT
+  </div>
+</body>
+</html>

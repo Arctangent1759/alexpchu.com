@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 
     $(document).mousemove(function(event) {
-        camera.position.y=-0.000001*(event.pageY-window.innerHeight/2)*(event.pageY-window.innerHeight/2)*(event.pageY-window.innerHeight/2)
+        //camera.position.y=-0.000001*(event.pageY-window.innerHeight/2)*(event.pageY-window.innerHeight/2)*(event.pageY-window.innerHeight/2)
     });
 
     function rescale(){
@@ -107,11 +107,13 @@ $(document).ready(function(){
                 navShown=true
             }
         }
+        /*
         var perc = 25+75*(window.innerHeight-SCROLLRATE*$('body').scrollTop())/window.innerHeight;
         if (perc < 0){
             perc=0;
         }
         $("div#header").css({"height":perc +"%"});
+        */
     }
 
     $(window).scroll(onscroll);

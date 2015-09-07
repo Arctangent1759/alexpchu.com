@@ -1,0 +1,15 @@
+Anything that is in this directory should appear at http://alexpchu.com/other/jessica/.
+
+For example, if you have a file foo.txt, it will appear at http://alexpchu.com/other/jessica/foo.txt
+
+Since you're part of a big file tree, you shouldn't use absolute links. That is:
+Use
+  <a href='pages/my_page.html'>text</a>
+instead of
+  <a href='http://alexpchu.com/other/jessica/pages/my_page.html>text</a>
+or
+  <a href='/other/jessica/pages/my_page.html>text</a>
+This will ensure that your content works on other domains, when you link it with namecheap.
+Regarding namecheap, you should probably use the iframe option, so that the url bar displays jessicagu.xyz instead of alexpchu.com.
+
+Be nice. Don't use too much disk/bandwidth. Cheap server is cheap.

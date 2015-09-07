@@ -1,0 +1,27 @@
+README
+======
+
+Platform:
+---------
+This software was developed for Linux.
+
+How to Run:
+-----------
+To run the script, run
+
+python chat.py
+
+There might be a lot of error output from ALSA, but it should go away after a while.
+
+How to Use:
+-----------
+
+First, enter your callsign so that the system can properly construct packets.
+You may have to wait for ALSA to stop outputing extraneous error messages.
+Enter your message following the MSG: prompt.
+When a message is received, it will print to standard out (on top of the prompt) but the input is still there.
+
+Notes:
+------
+
+The system does both transmit and receive. There is only one executable.
